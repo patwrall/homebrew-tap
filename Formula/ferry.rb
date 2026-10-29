@@ -1,25 +1,25 @@
 class Ferry < Formula
   desc "Parallel AI agents, one warm build: forkable, isolated Cargo target dirs per git worktree"
   homepage "https://patwrall.github.io/ferry"
-  version "0.1.2"
+  version "0.1.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/patwrall/ferry/releases/download/v0.1.2/ferry-rs-aarch64-apple-darwin.tar.xz"
-      sha256 "265dfb0b2d79c3344722c3ac7b4181cbb7ec3122137c588ac9fd6a5200ff382f"
+      url "https://github.com/patwrall/ferry/releases/download/v0.1.3/ferry-rs-aarch64-apple-darwin.tar.xz"
+      sha256 "d0a5067425d2d06c06ac4fe219aca9f8bc0a1b4a82ffe8fa99f17ff7b4d57e53"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/patwrall/ferry/releases/download/v0.1.2/ferry-rs-x86_64-apple-darwin.tar.xz"
-      sha256 "fec365a26f576889605c2a0aa2d4b89a5b0d519f8c6262ab056ae14237e01ce7"
+      url "https://github.com/patwrall/ferry/releases/download/v0.1.3/ferry-rs-x86_64-apple-darwin.tar.xz"
+      sha256 "e7ee9ad5ea6cc454160382861acd4a5192f0f9a10b008047352fcc6471c3bc21"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/patwrall/ferry/releases/download/v0.1.2/ferry-rs-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "9e17e79c2aad6c6a23942eb28398f72eb6366de04f15556e223b3002022fbf83"
+      url "https://github.com/patwrall/ferry/releases/download/v0.1.3/ferry-rs-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "9c58ee438c5ba46a4c08340e00c97ea9cdcf7a134b0099932cb6d2267ca4cd0b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/patwrall/ferry/releases/download/v0.1.2/ferry-rs-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "ba9d82599ca40234adc740d8b7f87e1ef4d38aab79e47fdaee1ac3e1b1f94de8"
+      url "https://github.com/patwrall/ferry/releases/download/v0.1.3/ferry-rs-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "3b46089e962e63691b281904653d066818c6c9e13a7361e16f8477a9b4cad47e"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
